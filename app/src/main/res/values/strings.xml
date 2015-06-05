@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SaintSafe</string>
+
+
+    <string name="title_section1">Inform</string>
+    <string name="title_section2">Report</string>
+    <string name="title_section3">Assist</string>
+
+
+
+    <string name="action_settings">Settings</string>
+</resources>

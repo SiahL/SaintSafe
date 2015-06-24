@@ -346,7 +346,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                     new Intent(getActivity(), SmsSentReceiver.class), 0);
             PendingIntent deliveredPI = PendingIntent.getBroadcast(getActivity(), 0,
                     new Intent(getActivity(), SmsDeliveredReceiver.class), 0);
-            Toast.makeText(getActivity(), "SMS sending ---delivered", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "SMS sending -delivered :)", Toast.LENGTH_SHORT).show();
             try {
                 SmsManager sms = SmsManager.getDefault();
                 ArrayList<String> mSMSMessage = sms.divideMessage(message);
@@ -360,7 +360,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             } catch (Exception e) {
 
                 e.printStackTrace();
-                Toast.makeText(getActivity(), "SMS sending failed...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "SMS sending failed :(...", Toast.LENGTH_SHORT).show();
             }
         }
     }
